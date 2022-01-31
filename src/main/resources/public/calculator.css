@@ -1,0 +1,46 @@
+.bg_RED{
+    background-color: rgb(166, 25, 46);
+    width: 100%;
+    height: 100%;
+    ;
+}
+.bg_BLACK{
+    background-color: rgb(84, 88, 90);
+    width: 90%;
+    height: 97%;
+    margin-left: 5%;
+    margin-bottom: 35px;
+}
+.bg_WHITE{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 93%;
+    padding-bottom: 35px;
+}
+.bg_INNER{
+    background-color: rgb(195, 213, 221);
+    /*width: 70%;
+    height: 80%;*/
+    padding-top: 45px;
+    margin-left: 35px;
+    margin-right: 300px;
+    padding-bottom: 35px;
+}
+.bg_INNER td{
+    text-align: center;
+}
+.p{
+    color: black;
+}
+input{
+    width: 30%;
+}
+button{
+    background-color: rgb(166, 25, 46);
+    color: white;
+}
+table,th,td{
+    border-collapse: collapse;
+    border: solid 2px gray;
+    width: 300px;
+}

@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+        <script type="text/javascript" src="calculator.js"></script>
+    </head>
+    <body>
+        <div class="bg_RED">
+            <div class="bg_BLACK">
+                <div class="bg_WHITE">
+                    <br>
+                    <h1 style="margin-left: 35px;">Grade Calculator</h1>
+                    <div class="bg_INNER">
+                        <h3 style= "color: rgb(166, 25, 46); margin-left: 35px;">Activities</h3>
+                        <p style="margin-left: 35px;">Give grades to the numeric activities:</p>
+                        <table id="tb" style="border-color: darkgray;border-collapse: collapse;border: 1px solid; width: 94%; margin-right: 35px; height: 200px;margin-left: 35px;">
+                            <tr>
+                                <th style="background-color: rgb(136, 149, 161);">Name</th>
+                                <th style="background-color: rgb(136, 149, 161);">Short Name</th>
+                                <th style="background-color: rgb(136, 149, 161);">Weight</th>
+                                <th style="background-color: rgb(136, 149, 161);">Grade</th>
+                                <th style="background-color: rgb(136, 149, 161);">Percent</th>
+                            </tr>
+                            <tr>
+                                <td>Activity1</td>
+                                <td>A1</td>
+                                <td><input id="ipn1" name="w" value=""/></td>
+                                <td>
+									<input id="g1" name="g" value="" onchange="getResult(1,0)"/>
+									/
+									<input id="gg1" name="gg" value="" onchange="getResult(1,1)"/>
+								</td>
+                                <td id="res1"></td>
+                            </tr>
+                            <tr>
+                                <td>Activity2</td>
+                                <td>A2</td>
+                                <td><input id="ipn2" name="w" value=""/></td>
+                                <td>
+									<input id="g2" name="g" value="" onchange="getResult(2,0)"/>
+									/
+									<input id="gg2" name="gg" value="" onchange="getResult(2,1)"/>
+								</td>
+                                <td id="res2"></td>
+                            </tr>
+                            <tr>
+                                <td>Activity3</td>
+                                <td>A3</td>
+                                <td><input id="ipn3" name="w" value=""/></td>
+                                <td>
+									<input id="g3" name="g" value="" onchange="getResult(3,0)"/>
+									/
+									<input id="gg3" name="gg" value="" onchange="getResult(3,1)"/>
+								</td>
+                                <td id="res3"></td>
+                            </tr>
+                            <tr>
+                                <td>Activity4</td>
+                                <td>A4</td>
+                                <td><input id="ipn4" name="w" value=""/></td>
+                                <td>
+									<input id="g4" name="g" value="" onchange="getResult(4,0)"/>
+									/
+									<input id="gg4" name="gg" value="" onchange="getResult(4,1)"/>
+								</td>
+                                <td id="res4"></td>
+                            </tr>
+                        </table>
+                        <button style="margin-top: 10px;margin-left: 35px;" onclick="add_Line()">ADD ACTIVITY</button>
+                        <p id="res" style="font-weight: bold;color: brown;margin-left: 35px;">Result &nbsp;&nbsp;<sapn id="showDiv"></span></p>
+                        <div style="float: right;margin-right: 30px;">
+                            <button onclick="weightBtn()">WEIGTHED</button>
+                            <button onclick="meanBtn()">MEAN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
